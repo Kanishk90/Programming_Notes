@@ -1,0 +1,24 @@
+Lec3:- Inheritance and Polymorphism
+        Class Relationship:- 1) Aggregation 2) Inheritance
+            1) Aggregation--->has a relationship(one class own the other class).
+                                ex:- Restaurant has a Menu  
+
+                            class Diagram:(class diagram of aggregation)
+                                Customer class --[b1 [-name,-gender,-address] b2[+print_address,+edit_profile] ]-<>---------address --[b1 [-city,-pin,-state] b2[+get_city,+edit_address] ]
+
+            2) Inheritance--->(jo bhi bap ka h wo aap ka hai) 
+                                To create a class one inherit other parent class inherit the child class
+                                    Note:-(child class object can access data and method of parent class)
+                                    Need:- To prevent the Code reusability(Don't repeat yourself[DRY])
+                                ex:- user login
+
+                            class Diagram (class Diagram of Inheritance)
+                                class1 --<|---------- class2
+                    Types of Inheritance:-
+                        1) Single inheritance:- parent ---> child
+                        2) Multilevel inheritence:- ---->grandparent--->parent--->child---->
+                        3) Hierarchical inheritence:- parent---->[ [child1],[child2],[child3] ]
+                        4) Multiple inheritance:-[ [Papa]~~~~~~~[Mummy] ]------>child
+                        5) Hybrid inheritance:----grandparent--->[ [Papa]~~~~~~~[Mummy] ]--->parent--->child
+                                
+            Polymorphism--->

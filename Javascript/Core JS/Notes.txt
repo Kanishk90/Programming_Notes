@@ -1,0 +1,80 @@
+Lec 1: Variable  Data Type
+
+        What is JavaScript?:---> JS is a Programming language.
+        Console:---> It is a part of browser where JS run
+
+
+        Concept1:- print the message to the console
+        >>>console.log('message');
+
+        Concept2:- Variable in JS- Variables are container for data
+        >>> age = 24;
+        >>>console.log(age);
+
+        Note:- JavaScript is the dynamic typing language.
+        It means that we don't have to declare the type of the variable.
+
+        Note:-Some ways to define variables
+                Ex:-fullName   CamelCase
+                    fullName
+                    full_name  snake_case
+                    full-name  kebabCase
+                    FullName   PascalCase
+
+        var let const:-
+            var:- can be redeclared and updated
+            let:- can not redeclared
+            const:- can not be redeclared and updated
+
+        Concept3:- Data types in JS
+        Primitive Data Types:-
+            Number, String,Boolean,Undefined,Null, BigInt,Symbol
+            >>>type of (data);
+        Non Primitive Data Types:-
+            Object It is a collection of values. [Array,function]
+
+Lec2:- Operators in JavaScript and Conditional statements.
+
+        Note:- Comments in JavaScript
+            singlie line comment //This is a comment.
+            Multi-line comment /*This is a comment*/
+
+        Concept1: Operators in JavaScript
+            Arithmetic Operator:--> +(add or Increment), -(sub or decrement),*(mul),/(divide)
+                                    Other Operators: --> Modulus Operator(%), Exponentiation (**), Increment(++) and decrement(--)
+                                    Unary Operators: -->post Increment(a++) pre Increment(++a)
+            Assignment Operators: --> = , +=,-=,*=,%= **=
+            Comparison operator:-->Equal to (==),Equal to & type(===),Not equal to(!=),Not equal to & type(!==),>=,>,<=,<
+            Logical operator:-->Logical AND (&&),Logical OR (||),Logical NOT(!)
+
+            Ternary operator:-->condition?true output:false output
+                        ex:- age> 18?"adult":"not adult"
+        Concept2: Conditional statements/switch
+                    ex:- let age;
+                        if(age>=18){
+                            console.log("You are eligible to vote);
+                        }else{
+                            console.log("You are not eligible to vote");
+                        }
+                    ex2:-let age = 24;
+                        if(age<18){
+                            console.log("Junior");
+                        }elif(age<60){
+                            console.log("senior");
+                        }else{
+                            console.log("Middle");
+                        }
+                        
+                    ex2:- const expr = "apple";
+                        switch(expr){
+                            case 'apple' :
+                                console.log("this is apple");
+                            case 'Mango':
+                                console.log("this is Mango");
+                        }
+        concept3: user input
+                let name = prompt("Enter your name")
+                console.log(name)
+
+
+

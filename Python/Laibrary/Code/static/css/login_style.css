@@ -1,0 +1,75 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: linear-gradient(120deg,#ffd9da,#cd5d67);
+    height: 100vh;
+}
+                                            /* Navigation bar */
+                                            
+/* Basic styling for navigation */
+ul.nav-menu {
+    list-style: none;
+    display: flex;
+    background-color: #91171f;
+    padding: 15px 0;
+    justify-content: right;
+    position: relative;
+}
+
+/* Styling for each menu item */
+ul.nav-menu li {
+    margin-right: 10px;
+}
+/* Styling for the Logo */
+li i{
+    color: #fff;
+    padding-right: 1130px;
+}
+/* Styling for links within the menu */
+ul.nav-menu li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 15px;
+}
+
+/* Change link color on hover */
+ul.nav-menu li a:hover {
+    background-color: #BA1F33;
+}
+
+                                            /* Main Content */
+.form_box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background: #ffd9da;
+    border-radius: 10px;
+    height: 350px;
+}    
+._form-name{
+    text-align: center;
+    padding: 5px 0 20px 0;
+    color: #91171f;
+}
+.usertype{
+    margin-left: 260px;
+    padding: 5px 0 20px 0;
+    color: #6c757d;
+}
+span a{
+    background-color: #BA1F33;
+    border-radius: 2px;
+    padding: 6px;
+    text-decoration: none;
+    color: #fff;
+}
+span a:hover{
+    color: #fff;
+}                                                                                    
+.form_box form{
+    padding: 0 40px;
+    box-sizing: border-box;
+}

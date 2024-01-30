@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>User Dashboard</title>
+                <link rel="stylesheet" href="{{ url_for('static', filename='css/UserMain_style.css') }}">
+                <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.css') }}">
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        </head>
+    <body>
+        <!-- This is a header section -->
+            <ul class="nav-menu" style="margin-bottom: 1px;">
+                    <li style="margin-right:40px;"><i class="fa-solid fa-book-open-reader" id="main_logo" >  Reads</i></li>
+                    <li><a href="#">Currently Issued</a></li>
+                    <!-- <li><a href="{{url_for('login')}}">Log In</a></li> -->
+                    <li><a href="{{url_for('login')}}"><i class="fa-solid fa-user" id="user_logo"> </i>Sign Out</a></li>
+            </ul>
+        <!-- This is User search second navigation bar -->
+            <ul class="nav-menu" style="background-color:#91171fbb;">
+                    <!-- This is Categories field -->
+                    <li>
+                        <select class="form-select-lg" aria-label="Large select example" style="border-radius: 5px; padding-bottom: 10px;">
+                            <option selected>Categories</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">History</option>
+                            <option value="3">Biography</option>
+                        </select>          
+                    </li> 
+                    <!-- This is Search field -->   
+                    <li>
+                            <input class="form-control-lg" list="datalistOptions" id="exampleDataList" placeholder="Search by Title, Author or ISBN" style="width: 1170px;">
+                    </li>
+                    <!-- This is Search Button -->
+                    <li>
+                        <button type="submit" class="btn btn-primary" style="background-color: #BA1F33; border-color: #fff; padding: 12px; padding-right: 20px;">Search</button>
+                    </li>
+                        
+            </ul>
+        <!-- This is a main content section -->
+
+        </div>
+    </body>
+</html>
